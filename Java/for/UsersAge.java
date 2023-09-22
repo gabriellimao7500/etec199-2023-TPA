@@ -4,13 +4,13 @@ import java.util.Scanner;
 public class UsersAge {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		int maisVelho = 0, maisNovo = 10000, AnoAtual, idade;
+		int maisVelho = 0, maisNovo = 900000000, AnoAtual, idade;
 		
 		AnoAtual = LocalDate.now().getYear();
 		
 		for(int i = 0; i <= 3; i++) {
 			
-			System.out.println("diga sua idade");
+			System.out.println("Digite o seu ano de nascimento");
 			idade = in.nextInt();
 			
 			idade = AnoAtual - idade;
@@ -25,6 +25,6 @@ public class UsersAge {
 			}
 		}
 		
-		System.out.println("o mais novo tem "+ maisNovo +"anos e o mais velho tem "+ maisVelho +"anos");
+		System.out.println("o mais novo tem "+ maisNovo +"anos e o mais velho tem "+ maisVelho +" anos");
 }
 }
